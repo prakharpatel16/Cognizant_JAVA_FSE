@@ -96,10 +96,8 @@ BEGIN
         WHERE LOANID = V_LOAN_ID;
         
         DBMS_OUTPUT.PUT_LINE('Loan ID: ' || V_LOAN_ID || ' interest rate updated to ' || V_NEW_INTEREST_RATE);
-    END LOOP;
-    
-    CLOSE CUR_LOANS;
-    
+    END LOOP;   
+    CLOSE CUR_LOANS;   
     COMMIT;
 END;
 /
